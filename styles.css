@@ -1,6 +1,6 @@
-* {
+/** {
   border: 1px solid red;
-}
+}*/
 
 html, body {
   font-family: 'Overlock', cursive;
@@ -39,6 +39,25 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.caption {
+  width:100%;
+  bottom: .3rem;
+  position:absolute;
+  background:rgba(0, 0, 0, 0);
+}
+
+.thumbnail {
+  border: 0 none;
+  box-shadow: none;
+  margin:0;
+  padding:0;
+}
+
+.caption h5 {
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
 }
 
 .menu-bar {
@@ -147,6 +166,11 @@ p {
   .menu-bar {
     visibility: hidden;
     display: none;
+  }
+  .dropdown {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .back-to-top {
     display: none;
