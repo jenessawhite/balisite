@@ -41,13 +41,6 @@ h1 {
   margin-right: auto;
 }
 
-.caption {
-  width:100%;
-  bottom: .3rem;
-  position:absolute;
-  background:rgba(0, 0, 0, 0);
-}
-
 .thumbnail {
   border: 0 none;
   box-shadow: none;
@@ -55,9 +48,42 @@ h1 {
   padding:0;
 }
 
-.caption h5 {
-  color: #fff;
+h5 {
+  color: #0a0a0a;
+  position: relative;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-align: center;
   -webkit-font-smoothing: antialiased;
+}
+
+.col-centered {
+  display:block;
+float:none;
+/* reset the text-align */
+text-align:center;
+/* inline-block space fix */
+margin-right:auto;
+margin-left: auto;
+}
+
+.pull-left {
+  display: block;
+  float: left;
+}
+
+.pull-right {
+  display: block;
+  float: right;
+}
+
+.img-thumbnail {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.clear {
+  clear: both;
 }
 
 .menu-bar {
@@ -81,7 +107,7 @@ h1 {
 }
 
 a.nav-link:hover{
-  color: #1560fb;
+  color: #093B85;
   background-color: #fafafa;
   font-weight: bold;
   letter-spacing: 2px;
@@ -106,6 +132,7 @@ a.nav-link:hover{
   min-height: 30px;
   background-color: #093B85;
   border-radius: 20px 2px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -146,6 +173,7 @@ p {
 .btn-primary {
   background-color: #fbb215;
   color: #093b85;
+  position: sticky;
 }
 
 .btn-primary::after {
